@@ -1,0 +1,40 @@
+.navigation {
+    font-size: 1.2rem;
+    background-color: rgb(57, 129, 177);
+}
+
+li a {
+    color: white; 
+    position: relative;
+}
+
+li + li {
+    margin-left: 1em;
+}
+
+li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transform: scaleX(0);
+    transition: transform 200ms;
+}
+
+li a:hover::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    transform: scaleX(1);
+}
+
+@media (max-width: 992px) { 
+    li {
+        margin-left: 1em;
+    }
+}
