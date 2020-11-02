@@ -3,6 +3,10 @@
     background-color: rgb(57, 129, 177);
 }
 
+ul {
+    padding: 0.5em;
+}
+
 li a {
     color: white; 
     position: relative;
