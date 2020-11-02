@@ -1,15 +1,23 @@
 .navigation {
     font-size: 1.2rem;
     background-color: rgb(57, 129, 177);
+    padding: 0 2em;
 }
 
 ul {
     padding: 0.5em;
 }
 
-li a {
+.logo a {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    transform: skew(-10deg);
+}
+
+li a, i {
     color: white; 
     position: relative;
+    cursor: pointer;
 }
 
 li + li {
