@@ -1,11 +1,12 @@
 .navigation {
     font-size: 1.2rem;
     background-color: rgb(57, 129, 177);
-    padding: 0 2em;
 }
 
 ul {
-    padding: 0.7em 1.2em;
+    padding: 0.7em 5em;
+    display: flex;
+    align-items: center;
 }
 
 .logo a {
