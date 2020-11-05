@@ -40,6 +40,10 @@ img {
     justify-content: center;
 }
 
+.custom-card-header {
+    text-align: center;
+}
+
 .card-1 {
     background-color: rgb(159, 215, 241);
     border-radius: 5px 0px 0px 5px;
