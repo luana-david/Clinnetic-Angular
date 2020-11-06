@@ -27,6 +27,7 @@ img {
     position: relative;
     top: -50px;
     z-index: 2;
+    margin-bottom: 5rem;
 }
 
 .custom-card {
@@ -59,6 +60,14 @@ img {
 .card-3 {
     background-color: rgb(159, 215, 241);
     border-radius: 0px 5px 5px 0px;
+}
+
+.schedule {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    font-size: 1.2rem;
 }
 
 
