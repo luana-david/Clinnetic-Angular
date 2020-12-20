@@ -89,4 +89,16 @@ img {
     .custom-card {
         max-width: 70%;
     }
+
+    .card-1 {
+      border-radius: 5px 5px 0px 0px;
+    }
+
+    .card-2 {
+      border-radius: 0px;
+    }
+
+    .card-3 {
+      border-radius: 0px 0px 5px 5px;
+    }
 }
