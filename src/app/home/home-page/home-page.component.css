@@ -45,8 +45,11 @@ img {
     text-align: center;
 }
 
+.card-1, .card-3 {
+  background-color: rgb(159, 215, 241);
+}
+
 .card-1 {
-    background-color: rgb(159, 215, 241);
     border-radius: 5px 0px 0px 5px;
 }
 
@@ -58,7 +61,6 @@ img {
 }
 
 .card-3 {
-    background-color: rgb(159, 215, 241);
     border-radius: 0px 5px 5px 0px;
 }
 
@@ -71,7 +73,7 @@ img {
 }
 
 
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
 
     .main-image {
         height: 40vh;
