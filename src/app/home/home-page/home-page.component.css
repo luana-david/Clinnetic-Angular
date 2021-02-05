@@ -150,6 +150,11 @@ img {
   transform: translateX(10px);
 }
 
+.price {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 
 @media (max-width: 992px) {
 
