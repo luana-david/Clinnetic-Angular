@@ -94,6 +94,7 @@ img {
 .passes-container {
   background-color: rgb(159, 215, 241);
   width: 1800px;
+  max-width: 100%;
   margin: 2rem auto 10rem;
   padding: 4em;
   border-radius: 5px;
@@ -101,7 +102,6 @@ img {
 
 .passes-title {
   text-align: center;
-  position: relative;
 }
 
 .passes {
@@ -111,7 +111,7 @@ img {
 }
 
 .pass {
-  width: 25%;
+  width: 30%;
   text-align: center;
   padding: 2em;
   border-radius: 5px;
@@ -190,6 +190,29 @@ img {
 
     .banner p {
       font-size: 2rem;
+    }
+
+    .passes {
+      display: block;
+      margin: auto;
+    }
+
+    .passes-container {
+      max-width: 100%;
+    }
+
+    .passes-title {
+      margin-bottom: 3rem;
+    }
+
+    .pass {
+      width: 100%;
+      margin: 3rem auto;
+    }
+
+    .pass:hover .detail {
+      opacity: 1;
+      transform: translateX(10px);
     }
 }
 
