@@ -14,6 +14,24 @@
     z-index: 1;
 }
 
+.main-image .banner{
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-30%, -50%) skew(-10deg);
+  opacity: 0.8;
+}
+
+.banner h1 {
+  font-size: 4rem;
+}
+
+.banner p {
+  font-size: 2rem;
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -101,4 +119,28 @@ img {
     .card-3 {
       border-radius: 0px 0px 5px 5px;
     }
+
+    .main-image .banner  {
+      transform: translate(-50%, -50%);
+      padding: 0.7em;
+    }
+
+    .banner h1 {
+      font-size: 3rem;
+    }
+
+    .banner p {
+      font-size: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
 }
