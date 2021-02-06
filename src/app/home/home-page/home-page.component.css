@@ -1,0 +1,233 @@
+.main-image {
+    height: 45vh;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(88, 116, 129);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.main-image .banner{
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-30%, -50%) skew(-10deg);
+  opacity: 0.8;
+}
+
+.banner h1 {
+  font-size: 4rem;
+}
+
+.banner p {
+  font-size: 2rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+    z-index: 2;
+    margin-bottom: 5rem;
+}
+
+.custom-card {
+    width: 600px;
+    max-width: 30%;
+    padding: 6em 2em;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.custom-card-header {
+    text-align: center;
+}
+
+.card-1, .card-3 {
+  background-color: rgb(159, 215, 241);
+}
+
+.card-1 {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.card-2 {
+    background-color: rgb(34, 100, 185);
+    color: white;
+    padding: 2em;
+    box-shadow: 0px 15px 0px 0px rgb(34, 100, 185), 0px -15px 0px 0px rgb(34, 100, 185);
+    border-radius: 5px;
+}
+
+.card-3 {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.passes-container {
+  background-color: rgb(159, 215, 241);
+  width: 1800px;
+  max-width: 100%;
+  margin: 2rem auto 10rem;
+  padding: 4em;
+  border-radius: 5px;
+}
+
+.passes-title {
+  text-align: center;
+}
+
+.passes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.pass {
+  width: 30%;
+  text-align: center;
+  padding: 2em;
+  border-radius: 5px;
+  transition: transform 0.4s cubic-bezier(.41,1.31,.68,.99);
+  background-color: rgb(205, 238, 253);
+}
+
+.pass:hover {
+  transform: translateY(-20px);
+}
+
+.pass h3 {
+  position: relative;
+  text-align: center;
+  padding: 0.5em;
+  color: rgb(34, 100, 185);
+}
+
+.pass-button {
+  padding: 1em 2em 1em 3em;
+  margin-top: 1rem;
+  background-color: rgb(34, 100, 185);
+  color: rgb(205, 238, 253);
+  border: none;
+  border-radius: 10px;
+}
+
+.pass-button .detail {
+  opacity: 0;
+  transition: transform 0.4s,opacity 0.4s cubic-bezier(.41,1.31,.68,.99);
+  transform: translateX(0px);
+}
+
+.pass-button:hover .detail{
+  opacity: 1;
+  transform: translateX(10px);
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
+@media (max-width: 992px) {
+
+    .main-image {
+        height: 40vh;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15%;
+    }
+
+    .custom-card {
+        max-width: 70%;
+    }
+
+    .card-1 {
+      border-radius: 5px 5px 0px 0px;
+    }
+
+    .card-2 {
+      border-radius: 0px;
+    }
+
+    .card-3 {
+      border-radius: 0px 0px 5px 5px;
+    }
+
+    .main-image .banner  {
+      transform: translate(-50%, -50%);
+      padding: 0.7em;
+    }
+
+    .banner h1 {
+      font-size: 3rem;
+    }
+
+    .banner p {
+      font-size: 2rem;
+    }
+
+    .passes {
+      display: block;
+      margin: auto;
+    }
+
+    .passes-container {
+      max-width: 100%;
+    }
+
+    .passes-title {
+      margin-bottom: 3rem;
+    }
+
+    .pass {
+      width: 100%;
+      margin: 3rem auto;
+    }
+
+    .pass:hover .detail {
+      opacity: 1;
+      transform: translateX(10px);
+    }
+}
+
+@media (max-width: 640px) {
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+}

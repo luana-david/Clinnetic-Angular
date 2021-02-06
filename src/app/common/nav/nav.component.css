@@ -1,6 +1,6 @@
 .navigation {
     font-size: 1.2rem;
-    background-color: rgb(57, 129, 177);
+    background-color: rgb(34, 100, 185);
 }
 
 ul {
@@ -16,7 +16,7 @@ ul {
 }
 
 li a, i {
-    color: white; 
+    color: white;
     position: relative;
     cursor: pointer;
 }
@@ -46,7 +46,7 @@ li a:hover::after {
     transform: scaleX(1);
 }
 
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
     li {
         margin-left: 1em;
     }
