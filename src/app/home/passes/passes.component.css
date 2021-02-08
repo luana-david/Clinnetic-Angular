@@ -19,6 +19,9 @@
   justify-content: space-around;
   margin-top: 3rem;
 }
+.pass p {
+  word-break: break-all;
+}
 
 .pass {
   margin: 3rem auto;
