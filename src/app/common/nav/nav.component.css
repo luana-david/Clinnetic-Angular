@@ -46,8 +46,56 @@ li a:hover::after {
     transform: scaleX(1);
 }
 
+.burger {
+  display: none;
+  position: relative;
+}
+
 @media (max-width: 992px) {
     li {
         margin-left: 1em;
+    }
+
+    .navigation {
+      padding: 1em;
+      display: flex;
+    }
+
+    .navbar-nav {
+      display: none;
+      transform: scale(0) !important;
+    }
+
+    .toggle-menu {
+      display: block;
+      padding: 1em 2em;
+      outline: none;
+      border: none;
+      background-color: rgb(34, 100, 185);
+      margin: 0 auto;
+    }
+
+    .burger {
+      display: block;
+      width: 30px;
+      background-color: white;
+      height: 3px;
+    }
+
+    .burger::before, .burger::after {
+      content: '';
+      width: 30px;
+      position: absolute;
+      height: 3px;
+      background-color: white;
+      left: 0;
+    }
+
+    .burger::after {
+      top: 10px;
+    }
+
+    .burger::before {
+      top: -10px;
     }
 }
