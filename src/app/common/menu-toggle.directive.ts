@@ -31,4 +31,16 @@ export class ToggleMenuDirective implements AfterViewInit {
     console.log(this.menu.style);
     this.toggled = !this.toggled
   }
+
+  @HostListener('window:resize', ['$event']) onResize(event) {
+    console.log(event.target.innerWidth);
+    if(event.target.innerWidth > 992) {
+      this.menu.style.height = '80px'
+      this.menu.style.transform = 'scaleY(1)'
+      console.log('height')
+    } else {
+      this.menu.style.height = '0'
+      this.menu.style.transform = 'scaleY(0)'
+    }
+ }
 }

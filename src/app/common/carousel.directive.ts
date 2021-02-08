@@ -1,3 +1,4 @@
+import { HostListener } from "@angular/core";
 import { AfterViewInit, Directive, ElementRef, Input } from "@angular/core";
 
 
@@ -40,6 +41,10 @@ export class CarouselDirective implements AfterViewInit {
     if(this.current < 3) {
       this.current++
     }
+  }
+
+  @HostListener('window:resize', ['$event']) onResize(event) {
+    this.width = this.el.nativeElement.children[1].clientWidth
   }
 
 }
