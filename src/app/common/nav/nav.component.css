@@ -58,12 +58,17 @@ li a:hover::after {
 
     .navigation {
       padding: 1em;
-      display: flex;
+    }
+
+    ul {
+      padding: 0 5em;
     }
 
     .navbar-nav {
-      display: none;
-      transform: scale(0) !important;
+      height: 0;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.15s cubic-bezier(.22,.93,.8,1.02), height 0.3s cubic-bezier(.22,.93,.8,1.02);
     }
 
     .toggle-menu {
