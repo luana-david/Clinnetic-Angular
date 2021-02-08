@@ -110,6 +110,10 @@
     min-width: 270px;
   }
 
+  .pass:hover {
+    transform: none;
+  }
+
   .pass p {
     word-break: break-all;
   }
