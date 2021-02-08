@@ -10,6 +10,7 @@ import { HomePageComponent } from './home/home-page/home-page.component';
 import { CardsComponent } from './home/cards/cards.component';
 import { PassesComponent } from './home/passes/passes.component';
 import { CarouselDirective } from './common/carousel.directive';
+import { ToggleMenuDirective } from './common/menu-toggle.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CarouselDirective } from './common/carousel.directive';
     HomePageComponent,
     CardsComponent,
     PassesComponent,
-    CarouselDirective
+    CarouselDirective,
+    ToggleMenuDirective
   ],
   imports: [
     BrowserModule,
