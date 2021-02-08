@@ -30,6 +30,11 @@ export class CarouselDirective implements AfterViewInit {
     if(this.current > 1) {
       this.current--
     }
+    if(this.current === 1) {
+      this.el.nativeElement.firstChild.style.opacity = '0'
+    } else {
+      this.el.nativeElement.lastChild.style.opacity = '1'
+    }
   }
 
   onClickRight() {
@@ -40,6 +45,11 @@ export class CarouselDirective implements AfterViewInit {
     }
     if(this.current < 3) {
       this.current++
+    }
+    if(this.current === 3) {
+      this.el.nativeElement.lastChild.style.opacity = '0'
+    } else {
+      this.el.nativeElement.firstChild.style.opacity = '1'
     }
   }
 
