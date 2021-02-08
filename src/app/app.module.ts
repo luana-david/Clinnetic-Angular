@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,7 @@ import { FooterComponent } from './common/footer/footer.component';
 import { HomePageComponent } from './home/home-page/home-page.component';
 import { CardsComponent } from './home/cards/cards.component';
 import { PassesComponent } from './home/passes/passes.component';
+import { CarouselDirective } from './common/carousel.directive';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { PassesComponent } from './home/passes/passes.component';
     FooterComponent,
     HomePageComponent,
     CardsComponent,
-    PassesComponent
+    PassesComponent,
+    CarouselDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
