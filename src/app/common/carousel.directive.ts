@@ -1,5 +1,5 @@
-import { AfterViewInit, ElementRef, HostListener, TemplateRef } from "@angular/core";
-import { Directive, Input } from "@angular/core";
+import { AfterViewInit, Directive, ElementRef, Input } from "@angular/core";
+
 
 @Directive({
   selector: '[carousel]'
@@ -13,8 +13,9 @@ export class CarouselDirective implements AfterViewInit {
   constructor(private el: ElementRef) {}
 
   ngAfterViewInit( ){
-    this.el.nativeElement.children[0].addEventListener('click', this.onClickLeft.bind(this))
-    this.el.nativeElement.children[2].addEventListener('click', this.onClickRight.bind(this))
+    console.log(this.el);
+    this.el.nativeElement.firstChild.addEventListener('click', this.onClickLeft.bind(this))
+    this.el.nativeElement.lastChild.addEventListener('click', this.onClickRight.bind(this))
   }
 
   onClickLeft() {
