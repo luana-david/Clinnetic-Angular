@@ -9,18 +9,20 @@ export class CarouselDirective implements AfterViewInit {
 
   current = 2
   direction: 'right' | 'left' | 'normal'
+  width: number
 
   constructor(private el: ElementRef) {}
 
   ngAfterViewInit( ){
-    console.log(this.el);
+    console.log(this.el.nativeElement.children[1].clientWidth)
+    this.width = this.el.nativeElement.children[1].clientWidth
     this.el.nativeElement.firstChild.addEventListener('click', this.onClickLeft.bind(this))
     this.el.nativeElement.lastChild.addEventListener('click', this.onClickRight.bind(this))
   }
 
   onClickLeft() {
     if(this.current === 2) {
-      this.el.nativeElement.children[1].children[0].style.transform = 'translateX(200px)'
+      this.el.nativeElement.children[1].children[0].style.transform = 'translateX(' + this.width +'px)'
     } else {
       this.el.nativeElement.children[1].children[0].style.transform = 'translateX(0px)'
     }
@@ -31,7 +33,7 @@ export class CarouselDirective implements AfterViewInit {
 
   onClickRight() {
     if(this.current === 2) {
-      this.el.nativeElement.children[1].children[0].style.transform = 'translateX(-200px)'
+      this.el.nativeElement.children[1].children[0].style.transform = 'translateX(-'+this.width+'px)'
     } else {
       this.el.nativeElement.children[1].children[0].style.transform = 'translateX(0px)'
     }
