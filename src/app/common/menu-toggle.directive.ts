@@ -33,7 +33,6 @@ export class ToggleMenuDirective implements AfterViewInit {
   }
 
   @HostListener('window:resize', ['$event']) onResize(event) {
-    console.log(event.target.innerWidth);
     if(event.target.innerWidth > 992) {
       this.menu.style.height = '80px'
       this.menu.style.transform = 'scaleY(1)'
