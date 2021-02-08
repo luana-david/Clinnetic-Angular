@@ -135,3 +135,16 @@
       background-color: rgb(205, 238, 253);
     }
   }
+
+  @media (max-width: 300px) {
+    .carousel-wrapper {
+      width: 200px;
+      min-width: 200px;
+    }
+
+    .custom-card {
+      max-width: 200px;
+      min-width: 200px;
+    }
+
+  }
