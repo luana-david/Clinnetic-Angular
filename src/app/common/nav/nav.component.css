@@ -46,7 +46,7 @@ li a:hover::after {
     transform: scaleX(1);
 }
 
-.burger {
+.toggle-menu {
   display: none;
   position: relative;
 }
@@ -82,6 +82,7 @@ li a:hover::after {
 
     .burger {
       display: block;
+      position: relative;
       width: 30px;
       background-color: white;
       height: 3px;
