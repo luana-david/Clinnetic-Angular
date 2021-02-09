@@ -46,8 +46,62 @@ li a:hover::after {
     transform: scaleX(1);
 }
 
+.toggle-menu {
+  display: none;
+  position: relative;
+}
+
 @media (max-width: 992px) {
     li {
         margin-left: 1em;
+    }
+
+    .navigation {
+      padding: 1em;
+    }
+
+    ul {
+      padding: 0 5em;
+    }
+
+    .navbar-nav {
+      height: 0;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.15s cubic-bezier(.22,.93,.8,1.02), height 0.3s cubic-bezier(.22,.93,.8,1.02);
+    }
+
+    .toggle-menu {
+      display: block;
+      padding: 1em 2em;
+      outline: none;
+      border: none;
+      background-color: rgb(34, 100, 185);
+      margin: 0 auto;
+    }
+
+    .burger {
+      display: block;
+      position: relative;
+      width: 30px;
+      background-color: white;
+      height: 3px;
+    }
+
+    .burger::before, .burger::after {
+      content: '';
+      width: 30px;
+      position: absolute;
+      height: 3px;
+      background-color: white;
+      left: 0;
+    }
+
+    .burger::after {
+      top: 10px;
+    }
+
+    .burger::before {
+      top: -10px;
     }
 }

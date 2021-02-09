@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  top: -70px;
+  z-index: 2;
+  margin: 0 auto 5rem;
+}
+
+.custom-card {
+  width: 250px;
+  max-width: 30%;
+  display: flex;
+  padding: 0.5em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 0.4s ease-out;
+  text-align: center;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+}
+
+.card-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-card-header {
+  text-align: center;
+}
+
+.card-1, .card-3 {
+  background-color: rgb(159, 215, 241);
+}
+
+.card-1 {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.card-2 {
+  background-color: rgb(34, 100, 185);
+  color: white;
+  box-shadow: 0px 15px 0px 0px rgb(34, 100, 185), 0px -15px 0px 0px rgb(34, 100, 185);
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.card-3 {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.controller {
+  display: none;
+}
+
+
+@media (max-width: 992px) {
+
+  .cards {
+    max-width: 80%;
+  }
+
+}
+
+  @media (max-width: 992px) {
+
+    .card-1 {
+      border-radius: 5px;
+    }
+
+    .card-2 {
+      border-radius: 5px;
+      box-shadow: 0px 0px 0px rgb(34, 100, 185);
+    }
+
+    .card-3 {
+      border-radius: 5px;
+    }
+
+    .cards {
+      width: 100%;
+      transition: transform 0.4s ease-in;
+      top: 0;
+    }
+
+    .carousel {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 1em auto 1em;
+      max-width: 100%;
+    }
+
+    .carousel-wrapper {
+      top: 0px;
+      width: 250px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      overflow-y: visible;
+    }
+
+    .custom-card {
+      max-width: 250px;
+      min-width: 250px;
+      padding: 1.5em 0;
+      text-align: center;
+    }
+
+    .custom-card:hover {
+      transform: none;
+    }
+
+    .controller {
+      display: inline-block;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      outline: none;
+      background-color: rgb(205, 238, 253);
+    }
+  }
+
+  @media (max-width: 300px) {
+    .carousel-wrapper {
+      width: 200px;
+      min-width: 200px;
+    }
+
+    .custom-card {
+      max-width: 200px;
+      min-width: 200px;
+    }
+
+  }
