@@ -13,10 +13,10 @@
 }
 
 .custom-card {
-  width: 250px;
+  width: 300px;
   max-width: 30%;
   display: flex;
-  padding: 0.5em;
+  padding: 1em;
   justify-content: center;
   align-items: center;
   flex-direction: column;
