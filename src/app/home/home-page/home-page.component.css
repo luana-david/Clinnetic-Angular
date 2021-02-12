@@ -100,6 +100,25 @@ img {
 
 @media (max-width: 992px) {
 
+  .parallax {
+    height: 1000px;
+  }
+
+  .reasons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .parallax {
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+    .reason + .reason {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+
     .main-image {
         height: 40vh;
     }
