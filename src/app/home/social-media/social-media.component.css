@@ -21,7 +21,7 @@
 }
 
 .left h5 {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .contact span{
@@ -57,6 +57,12 @@
   color: rgb(34, 100, 185);
   margin-top: 1em;
   font-weight: 600;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.right button:hover {
+  background-color: rgb(34, 100, 185);
+  color: rgb(205, 238, 253);
 }
 
 button {
