@@ -75,10 +75,8 @@ label {
   transition: top 0.1s linear, font-size 0.1s linear;
 }
 
-input:focus + label {
+input:focus + label, input:not(:placeholder-shown) + label {
   top: -1em;
   font-size: 0.7rem;
 }
-
-
 
