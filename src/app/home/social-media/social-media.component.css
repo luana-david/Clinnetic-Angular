@@ -5,10 +5,15 @@
   display: flex;
   padding: 5em;
   justify-content: space-around;
+  border-radius: 10px;
 }
 
 .left, .right {
   width: 50%;
+}
+
+.right {
+  margin-left: 30px;
 }
 
 .contact {
@@ -35,13 +40,23 @@
 }
 
 .social-media button, .right button {
-  color: rgb(205, 238, 253);
   border: none;
   border-radius: 5px;
-  background-color: rgb(34, 100, 185);
   padding: 0.5em 1em;
   transition: transform 0.5s cubic-bezier(.17,.67,.51,1.42);
   margin-top: 0.5em;
+}
+
+.social-media button {
+  background-color: rgb(34, 100, 185);
+  color: rgb(205, 238, 253);
+}
+
+.right button {
+  background-color: rgb(159, 215, 241);
+  color: rgb(34, 100, 185);
+  margin-top: 1em;
+  font-weight: 600;
 }
 
 button {
