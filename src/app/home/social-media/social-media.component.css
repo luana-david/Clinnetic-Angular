@@ -1,0 +1,143 @@
+.container{
+  margin-bottom: 9em;
+  background-color: rgb(205, 238, 253);
+  max-width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 10px;
+}
+
+.left, .right {
+  width: 50%;
+}
+
+.right {
+  margin-left: 30px;
+}
+
+.contact {
+  margin-bottom: 2em;
+}
+
+.left h5 {
+  font-weight: 300;
+}
+
+.contact span{
+  font-size: 2rem;
+  display: inline-block;
+  color: rgb(34, 100, 185);
+  background-color: rgb(159, 215, 241);
+  padding: 0.7em;
+  border-radius: 10px;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.social-media button, .right button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(.17,.67,.51,1.42);
+  transition: -webkit-transform 0.5s cubic-bezier(.17,.67,.51,1.42);
+  -o-transition: transform 0.5s cubic-bezier(.17,.67,.51,1.42);
+  transition: transform 0.5s cubic-bezier(.17,.67,.51,1.42);
+  transition: transform 0.5s cubic-bezier(.17,.67,.51,1.42), -webkit-transform 0.5s cubic-bezier(.17,.67,.51,1.42);
+  margin-top: 0.5em;
+}
+
+.social-media button {
+  background-color: rgb(34, 100, 185);
+  color: rgb(205, 238, 253);
+}
+
+.right button {
+  background-color: rgb(159, 215, 241);
+  color: rgb(34, 100, 185);
+  margin-top: 1em;
+  font-weight: 600;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  -o-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.right button:hover {
+  background-color: rgb(34, 100, 185);
+  color: rgb(205, 238, 253);
+}
+
+button {
+  margin-right: 1em;
+}
+
+.social-media button:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.newsfeed input {
+  display: block;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(34, 100, 185);
+  outline: none;
+  width: 80%;
+}
+
+.form-field {
+  position: relative;
+  margin-top: 1em;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  color: rgba(34, 100, 185, 0.6);
+  font-size: 0.9rem;
+  font-weight: 500;
+  -webkit-transition: top 0.1s linear, font-size 0.1s linear;
+  -o-transition: top 0.1s linear, font-size 0.1s linear;
+  transition: top 0.1s linear, font-size 0.1s linear;
+}
+
+input:focus + label, input:not(:placeholder-shown) + label {
+  top: -1em;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 992px) {
+
+  .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 3em;
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  .left, .right {
+    width: 100%;
+ }
+
+ .right {
+   margin-left: 0;
+   margin-top: 2em;
+ }
+
+ .newsfeed input {
+   width: 100%;
+ }
+}
+

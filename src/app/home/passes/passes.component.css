@@ -5,7 +5,11 @@
   margin: 2rem auto 10rem;
   padding: 4em;
   border-radius: 5px;
+  -webkit-transition: -webkit-transform 0.4s ease-in;
+  transition: -webkit-transform 0.4s ease-in;
+  -o-transition: transform 0.4s ease-in;
   transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
 }
 
 .passes-title {
@@ -14,9 +18,12 @@
 }
 
 .passes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   max-width: 80%;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 3rem auto 0;
 }
 .pass p {
@@ -30,12 +37,18 @@
   text-align: center;
   padding: 2em;
   border-radius: 5px;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(.41,1.31,.68,.99);
+  transition: -webkit-transform 0.4s cubic-bezier(.41,1.31,.68,.99);
+  -o-transition: transform 0.4s cubic-bezier(.41,1.31,.68,.99);
   transition: transform 0.4s cubic-bezier(.41,1.31,.68,.99);
+  transition: transform 0.4s cubic-bezier(.41,1.31,.68,.99), -webkit-transform 0.4s cubic-bezier(.41,1.31,.68,.99);
   background-color: rgb(205, 238, 253);
 }
 
 .pass:hover {
-  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
 }
 
 .pass h3 {
@@ -56,13 +69,21 @@
 
 .pass-button .detail {
   opacity: 0;
+  -webkit-transition: opacity 0.4s cubic-bezier(.41,1.31,.68,.99),-webkit-transform 0.4s;
+  transition: opacity 0.4s cubic-bezier(.41,1.31,.68,.99),-webkit-transform 0.4s;
+  -o-transition: transform 0.4s,opacity 0.4s cubic-bezier(.41,1.31,.68,.99);
   transition: transform 0.4s,opacity 0.4s cubic-bezier(.41,1.31,.68,.99);
-  transform: translateX(0px);
+  transition: transform 0.4s,opacity 0.4s cubic-bezier(.41,1.31,.68,.99),-webkit-transform 0.4s;
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
 }
 
 .pass-button:hover .detail{
   opacity: 1;
-  transform: translateX(10px);
+  -webkit-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 .price {
@@ -89,9 +110,14 @@
   }
 
   .carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 1em auto 1em;
     max-width: 100%;
   }
@@ -99,10 +125,19 @@
   .carousel-wrapper {
     width: 270px;
     min-width: 270px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     overflow-x: hidden;
     overflow-y: visible;
   }
@@ -113,7 +148,9 @@
   }
 
   .pass:hover {
-    transform: none;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
 
   .pass p {
@@ -121,7 +158,11 @@
   }
 
   .passes {
+    -webkit-transition: -webkit-transform 0.4s ease-in;
+    transition: -webkit-transform 0.4s ease-in;
+    -o-transition: transform 0.4s ease-in;
     transition: transform 0.4s ease-in;
+    transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
     margin: 0;
   }
 

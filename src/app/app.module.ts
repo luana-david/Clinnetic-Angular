@@ -11,6 +11,7 @@ import { CardsComponent } from './home/cards/cards.component';
 import { PassesComponent } from './home/passes/passes.component';
 import { CarouselDirective } from './common/carousel.directive';
 import { ToggleMenuDirective } from './common/menu-toggle.directive';
+import { SocialMediaComponent } from './home/social-media/social-media.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ToggleMenuDirective } from './common/menu-toggle.directive';
     CardsComponent,
     PassesComponent,
     CarouselDirective,
-    ToggleMenuDirective
+    ToggleMenuDirective,
+    SocialMediaComponent
   ],
   imports: [
     BrowserModule,
