@@ -1,107 +1,129 @@
 .navigation {
-    font-size: 1.2rem;
-    background-color: rgb(34, 100, 185);
+  font-size: 1.2rem;
+  background-color: rgb(34, 100, 185);
 }
 
 ul {
-    padding: 0.7em 5em;
-    display: flex;
-    align-items: center;
+  padding: 0.7em 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo a {
-    font-family: 'Pacifico', cursive;
-    font-size: 2rem;
-    transform: skew(-10deg);
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  -webkit-transform: skew(-10deg);
+      -ms-transform: skew(-10deg);
+          transform: skew(-10deg);
 }
 
 li a, i {
-    color: white;
-    position: relative;
-    cursor: pointer;
+  color: white;
+  position: relative;
+  cursor: pointer;
 }
 
 li + li {
-    margin-left: 1em;
+  margin-left: 1em;
 }
 
 li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 5px;
-    height: 3px;
-    background-color: white;
-    border-radius: 3px;
-    transform: scaleX(0);
-    transition: transform 200ms;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  -o-transition: transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
 }
 
 li a:hover::after {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 5px;
-    transform: scaleX(1);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .toggle-menu {
-  display: none;
-  position: relative;
+display: none;
+position: relative;
 }
 
 @media (max-width: 992px) {
-    li {
-        margin-left: 1em;
-    }
+  li {
+      margin-left: 1em;
+  }
 
-    .navigation {
-      padding: 1em;
-    }
+  .navigation {
+    padding: 1em;
+  }
 
-    ul {
-      padding: 0 5em;
-    }
+  ul {
+    padding: 0 5em;
+  }
 
-    .navbar-nav {
-      height: 0;
-      transform: scaleY(0);
-      transform-origin: top;
-      transition: transform 0.15s cubic-bezier(.22,.93,.8,1.02), height 0.3s cubic-bezier(.22,.93,.8,1.02);
-    }
+  .navbar-nav {
+    height: 0;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: top;
+        -ms-transform-origin: top;
+            transform-origin: top;
+    -webkit-transition: height 0.3s cubic-bezier(.22,.93,.8,1.02), -webkit-transform 0.15s cubic-bezier(.22,.93,.8,1.02);
+    transition: height 0.3s cubic-bezier(.22,.93,.8,1.02), -webkit-transform 0.15s cubic-bezier(.22,.93,.8,1.02);
+    -o-transition: transform 0.15s cubic-bezier(.22,.93,.8,1.02), height 0.3s cubic-bezier(.22,.93,.8,1.02);
+    transition: transform 0.15s cubic-bezier(.22,.93,.8,1.02), height 0.3s cubic-bezier(.22,.93,.8,1.02);
+    transition: transform 0.15s cubic-bezier(.22,.93,.8,1.02), height 0.3s cubic-bezier(.22,.93,.8,1.02), -webkit-transform 0.15s cubic-bezier(.22,.93,.8,1.02);
+  }
 
-    .toggle-menu {
-      display: block;
-      padding: 1em 2em;
-      outline: none;
-      border: none;
-      background-color: rgb(34, 100, 185);
-      margin: 0 auto;
-    }
+  .toggle-menu {
+    display: block;
+    padding: 1em 2em;
+    outline: none;
+    border: none;
+    background-color: rgb(34, 100, 185);
+    margin: 0 auto;
+  }
 
-    .burger {
-      display: block;
-      position: relative;
-      width: 30px;
-      background-color: white;
-      height: 3px;
-    }
+  .burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    background-color: white;
+    height: 3px;
+  }
 
-    .burger::before, .burger::after {
-      content: '';
-      width: 30px;
-      position: absolute;
-      height: 3px;
-      background-color: white;
-      left: 0;
-    }
+  .burger::before, .burger::after {
+    content: '';
+    width: 30px;
+    position: absolute;
+    height: 3px;
+    background-color: white;
+    left: 0;
+  }
 
-    .burger::after {
-      top: 10px;
-    }
+  .burger::after {
+    top: 10px;
+  }
 
-    .burger::before {
-      top: -10px;
-    }
+  .burger::before {
+    top: -10px;
+  }
 }

@@ -1,150 +1,180 @@
 .main-image {
-    height: 60vh;
-    position: relative;
+  height: 60vh;
+  position: relative;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgb(88, 116, 129);
-    opacity: 0.5;
-    z-index: 1;
-}
-
-.main-image .banner {
-  z-index: 2;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  color: white;
-  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(88, 116, 129);
+  opacity: 0.5;
+  z-index: 1;
 }
 
 .main-image .banner {
-  transform: translate(-30%, -50%) skew(-10deg);
+z-index: 2;
+position: absolute;
+top: 50%;
+left: 50%;
+color: white;
+opacity: 0.8;
+}
+
+.main-image .banner {
+-webkit-transform: translate(-30%, -50%) skew(-10deg);
+    -ms-transform: translate(-30%, -50%) skew(-10deg);
+        transform: translate(-30%, -50%) skew(-10deg);
 }
 
 .parallax {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 5rem;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+margin-bottom: 5rem;
 }
 
 .parallax .overlay {
-  opacity: 0.8;
+opacity: 0.8;
 }
 
 .parallax .banner {
-  transform: translate(0, 0);
-  position: relative;
-  z-index: 2;
-  color: white;
+-webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+position: relative;
+z-index: 2;
+color: white;
 }
 
 .parallax .banner h1 {
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 1em;
+font-size: 3rem;
+text-align: center;
+margin-bottom: 1em;
 }
 
 .banner h1 {
-  font-size: 4rem;
+font-size: 4rem;
 }
 
 .banner p {
-  font-size: 2rem;
+font-size: 2rem;
 }
 
 .reasons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 80%;
-  margin: auto;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+max-width: 80%;
+margin: auto;
 }
 
 .banner .reason {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  max-width: 80%;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+text-align: center;
+max-width: 80%;
 }
 
 .reason p {
-  font-size: 1rem !important;
+font-size: 1rem !important;
 }
 
 .reason + .reason {
-  margin-left: 2em;
+margin-left: 2em;
 }
 
 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .parallax {
-  height: 450px;
-  background-image: url("../../../assets/images/health.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
+height: 450px;
+background-image: url("../../../assets/images/health.jpg");
+background-size: cover;
+background-attachment: fixed;
+position: relative;
 }
 
 
 @media (max-width: 992px) {
 
-  .parallax {
-    height: 1000px;
+.parallax {
+  height: 1000px;
+}
+
+.reasons {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.parallax {
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+  .reason + .reason {
+    margin-left: 0;
+    margin-top: 1rem;
   }
 
-  .reasons {
-    justify-content: center;
-    flex-wrap: wrap;
+  .main-image {
+      height: 40vh;
   }
 
-  .parallax {
-    background-position: center;
-    background-size: 100% 100%;
+  .main-image .banner  {
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 0.7em;
   }
 
-    .reason + .reason {
-      margin-left: 0;
-      margin-top: 1rem;
-    }
+  .banner h1 {
+    font-size: 3rem;
+  }
 
-    .main-image {
-        height: 40vh;
-    }
-
-    .main-image .banner  {
-      transform: translate(-50%, -50%);
-      padding: 0.7em;
-    }
-
-    .banner h1 {
-      font-size: 3rem;
-    }
-
-    .banner p {
-      font-size: 2rem;
-    }
+  .banner p {
+    font-size: 2rem;
+  }
 
 }
 
 @media (max-width: 640px) {
 
-  .banner h1 {
-    font-size: 2rem;
-  }
+.banner h1 {
+  font-size: 2rem;
+}
 
-  .banner p {
-    font-size: 1rem;
-  }
+.banner p {
+  font-size: 1rem;
+}
 }

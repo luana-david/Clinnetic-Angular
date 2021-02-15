@@ -1,11 +1,19 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   top: -70px;
   z-index: 2;
@@ -15,22 +23,41 @@
 .custom-card {
   width: 300px;
   max-width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 1em;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  transition: -webkit-transform 0.4s ease-out;
+  -o-transition: transform 0.4s ease-out;
   transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
   text-align: center;
 }
 
 .custom-card:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .card-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .custom-card-header {
@@ -48,7 +75,8 @@
 .card-2 {
   background-color: rgb(34, 100, 185);
   color: white;
-  box-shadow: 0px 15px 0px 0px rgb(34, 100, 185), 0px -15px 0px 0px rgb(34, 100, 185);
+  -webkit-box-shadow: 0px 15px 0px 0px rgb(34, 100, 185), 0px -15px 0px 0px rgb(34, 100, 185);
+          box-shadow: 0px 15px 0px 0px rgb(34, 100, 185), 0px -15px 0px 0px rgb(34, 100, 185);
   border-radius: 5px;
   z-index: 2;
 }
@@ -58,9 +86,16 @@
 }
 
 .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 2rem;
   font-size: 1rem;
 }
@@ -86,7 +121,8 @@
 
     .card-2 {
       border-radius: 5px;
-      box-shadow: 0px 0px 0px rgb(34, 100, 185);
+      -webkit-box-shadow: 0px 0px 0px rgb(34, 100, 185);
+              box-shadow: 0px 0px 0px rgb(34, 100, 185);
     }
 
     .card-3 {
@@ -95,14 +131,23 @@
 
     .cards {
       width: 100%;
+      -webkit-transition: -webkit-transform 0.4s ease-in;
+      transition: -webkit-transform 0.4s ease-in;
+      -o-transition: transform 0.4s ease-in;
       transition: transform 0.4s ease-in;
+      transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
       top: 0;
     }
 
     .carousel {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-around;
-      align-items: center;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin: 1em auto 1em;
       max-width: 100%;
     }
@@ -110,10 +155,19 @@
     .carousel-wrapper {
       top: 0px;
       width: 250px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       overflow-x: hidden;
       overflow-y: visible;
     }
@@ -126,7 +180,9 @@
     }
 
     .custom-card:hover {
-      transform: none;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none;
     }
 
     .controller {
