@@ -101,6 +101,7 @@ max-width: 80%;
 
 .reason p {
 font-size: 1rem !important;
+max-width:60ch;
 }
 
 .reason + .reason {
