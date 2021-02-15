@@ -12,23 +12,19 @@ import { PassesComponent } from './home/passes/passes.component';
 import { CarouselDirective } from './common/carousel.directive';
 import { ToggleMenuDirective } from './common/menu-toggle.directive';
 import { SocialMediaComponent } from './home/social-media/social-media.component';
+import { SharedModule } from './common/shared.module';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavComponent,
-    FooterComponent,
-    HomePageComponent,
-    CardsComponent,
-    PassesComponent,
-    CarouselDirective,
-    ToggleMenuDirective,
-    SocialMediaComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SharedModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
