@@ -27,6 +27,11 @@ li a, i {
   cursor: pointer;
 }
 
+li:focus {
+  outline: none !important;
+  border: none !important;
+}
+
 li + li {
   margin-left: 1em;
 }
@@ -58,6 +63,21 @@ li a:hover::after {
   -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+ a.active-link {
+  position: relative;
+}
+
+ a.active-link::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
 }
 
 .toggle-menu {
