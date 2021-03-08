@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { DepartmentsComponent } from './departments.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatIconModule } from '@angular/material/icon'
 
 const routes: Routes = [
   {path: '', component: DepartmentsComponent}
@@ -15,7 +16,8 @@ const routes: Routes = [
   imports: [
     RouterModule.forChild(routes),
     CommonModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatIconModule
   ],
   exports: [
     DepartmentsComponent,

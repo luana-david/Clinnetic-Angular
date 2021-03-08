@@ -1,9 +1,14 @@
+<h1>Checkout our departments and doctors:</h1>
+
 <mat-accordion>
   <mat-expansion-panel *ngFor="let department of departments">
-    <mat-expansion-panel-header>
+    <mat-expansion-panel-header class="space-between">
       <mat-panel-title>
         {{department.name}}
       </mat-panel-title>
+      <mat-panel-description >
+        <mat-icon>list</mat-icon>
+      </mat-panel-description>
     </mat-expansion-panel-header>
     <p *ngFor="let doctor of department.doctors">{{ doctor.firstName }} {{ doctor.lastName }} </p>
   </mat-expansion-panel>
