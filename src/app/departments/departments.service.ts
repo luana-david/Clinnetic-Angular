@@ -15,25 +15,13 @@ export class DepartmentsService {
           firstName: 'Laura',
           lastName: 'Stewart',
           departmentId: '1'
-        }
-      ]
-    },
-    {
-      id: '1',
-      name: 'Chardiology',
-      doctors: [
+        },
         {
           id: '2',
           firstName: 'Arthur',
           lastName: 'McKenzy',
           departmentId: '1'
-        }
-      ]
-    },
-    {
-      id: '1',
-      name: 'Chardiology',
-      doctors: [
+        },
         {
           id: '3',
           firstName: 'Deborah',
@@ -51,13 +39,7 @@ export class DepartmentsService {
           firstName: 'Sarah',
           lastName: 'Lee',
           departmentId: '2'
-        }
-      ]
-    },
-    {
-      id: '2',
-      name: 'Dermathology',
-      doctors: [
+        },
         {
           id: '5',
           firstName: 'Mathew',
@@ -75,13 +57,7 @@ export class DepartmentsService {
           firstName: 'Kris',
           lastName: 'Wagner',
           departmentId: '3'
-        }
-      ]
-    },
-    {
-      id: '3',
-      name: 'Gastroentherology',
-      doctors: [
+        },
         {
           id: '7',
           firstName: 'Lucy',
