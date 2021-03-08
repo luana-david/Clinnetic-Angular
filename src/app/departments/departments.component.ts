@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DepartmentModel } from './department.model';
+import { DepartmentsService } from './departments.service';
 
 @Component({
   selector: 'app-departments',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DepartmentsComponent implements OnInit {
 
-  constructor() { }
+  departments: DepartmentModel[] = []
+
+  constructor(private departmentsService: DepartmentsService) { }
 
   ngOnInit(): void {
+    this.departments = this.departmentsService.getDepartments()
   }
 
 }
