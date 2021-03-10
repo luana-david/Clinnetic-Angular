@@ -1,0 +1,30 @@
+mat-panel-description {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.subtitle {
+  padding: 1em;
+  color: var(--dark-blue);
+  background-color: var(--light-blue);
+  margin: 1em;
+  border-radius: 25px;
+  font-size: 1.3rem;
+}
+
+mat-panel-title h5 {
+  color: var(--dark-blue);
+}
+
+mat-expansion-panel p {
+  color: var(--dark-blue);
+}
+
+i {
+  color: var(--dark-blue);
+}
+
+.departments {
+  width: 50%;
+  padding: 1.3rem;
+}
