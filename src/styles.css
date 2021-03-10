@@ -6,6 +6,12 @@
     padding: 0;
 }
 
+:root {
+  --dark-blue: rgb(34, 100, 185);
+  --medium-blue: rgb(159, 215, 241);
+  --light-blue: rgb(205, 238, 253);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     height: 100%;
