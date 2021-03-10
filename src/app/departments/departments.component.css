@@ -20,8 +20,19 @@ mat-expansion-panel p {
   color: var(--dark-blue);
 }
 
+.doctor {
+  outline: none;
+  cursor: pointer;
+}
+
+.selected-doctor {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
 i {
   color: var(--dark-blue);
+  opacity: 0;
 }
 
 .page {
