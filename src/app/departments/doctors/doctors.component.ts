@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+import { DepartmentsService } from '../departments.service';
+import { DoctorModel } from '../doctor.model';
 
 @Component({
   selector: 'app-doctors',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DoctorsComponent implements OnInit {
 
-  constructor() { }
+  doctor
+
+  constructor(private departmentsService: DepartmentsService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.params.subscribe((param: Params) => {
+      this.doctor = this.departmentsService.getDoctor(param['id'])
+      console.log(this.doctor);
+
+    })
   }
 
 }
