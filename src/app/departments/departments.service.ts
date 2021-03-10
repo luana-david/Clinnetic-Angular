@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { DepartmentModel } from "./department.model";
+import { DoctorModel } from "./doctor.model";
 
 @Injectable({providedIn: 'root'})
 
@@ -70,6 +71,17 @@ export class DepartmentsService {
 
   getDepartments() {
     return this._departments
+  }
+
+  getDoctor(doctorId: string) {
+    let doctorFound
+    this._departments.forEach(department => department.doctors.forEach(doctor => {
+      if(doctor.id == doctorId) {
+        console.log(doctor);
+        doctorFound = doctor
+      }
+    }))
+    return doctorFound
   }
 
 }
