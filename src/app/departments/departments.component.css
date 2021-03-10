@@ -24,7 +24,16 @@ i {
   color: var(--dark-blue);
 }
 
+.page {
+  display: flex;
+}
+
 .departments {
+  width: 50%;
+  padding: 1.3rem;
+}
+
+.doctors {
   width: 50%;
   padding: 1.3rem;
 }

@@ -1,16 +1,22 @@
 <h2 class="subtitle">Checkout our departments and doctors:</h2>
-<div class="departments">
-  <mat-accordion>
-    <mat-expansion-panel *ngFor="let department of departments" hideToggle>
-      <mat-expansion-panel-header class="space-between">
-        <mat-panel-title>
-          <h5>{{department.name}}</h5>
-        </mat-panel-title>
-        <mat-panel-description >
-          <mat-icon>people</mat-icon>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <p *ngFor="let doctor of department.doctors"><i class="fa fa-stethoscope fa-lg p-2"></i>{{ doctor.firstName }} {{ doctor.lastName }} </p>
-    </mat-expansion-panel>
-  </mat-accordion>
+<div class="page">
+  <div class="departments">
+    <mat-accordion>
+      <mat-expansion-panel *ngFor="let department of departments" hideToggle>
+        <mat-expansion-panel-header class="space-between">
+          <mat-panel-title>
+            <h5>{{department.name}}</h5>
+          </mat-panel-title>
+          <mat-panel-description >
+            <mat-icon>people</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p *ngFor="let doctor of department.doctors"><i class="fa fa-stethoscope fa-lg p-2"></i>{{ doctor.firstName }} {{ doctor.lastName }} </p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+  <div class="doctors">
+    <router-outlet></router-outlet>
+  </div>
+
 </div>
