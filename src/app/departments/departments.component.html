@@ -11,12 +11,15 @@
             <mat-icon>people</mat-icon>
           </mat-panel-description>
         </mat-expansion-panel-header>
-        <p *ngFor="let doctor of department.doctors"><i class="fa fa-stethoscope fa-lg p-2"></i>{{ doctor.firstName }} {{ doctor.lastName }} </p>
+        <div class="doctor" *ngFor="let doctor of department.doctors" [routerLink]="['/departments/doctor', doctor.id]" >
+          <p>
+            <i routerLinkActive="selected-doctor" class="fa fa-stethoscope fa-lg p-2"></i>{{ doctor.firstName }} {{ doctor.lastName }} {{doctor.id}}
+          </p>
+        </div>
       </mat-expansion-panel>
     </mat-accordion>
   </div>
   <div class="doctors">
     <router-outlet></router-outlet>
   </div>
-
 </div>
