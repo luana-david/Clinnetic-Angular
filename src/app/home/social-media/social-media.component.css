@@ -1,6 +1,6 @@
 .container{
   margin-bottom: 9em;
-  background-color: rgb(205, 238, 253);
+  background-color: var(--light-blue);
   max-width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,8 +30,8 @@
 .contact span{
   font-size: 2rem;
   display: inline-block;
-  color: rgb(34, 100, 185);
-  background-color: rgb(159, 215, 241);
+  color: var(--dark-blue);
+  background-color: var(--medium-blue);
   padding: 0.7em;
   border-radius: 10px;
 }
@@ -58,13 +58,13 @@
 }
 
 .social-media button {
-  background-color: rgb(34, 100, 185);
-  color: rgb(205, 238, 253);
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
 }
 
 .right button {
-  background-color: rgb(159, 215, 241);
-  color: rgb(34, 100, 185);
+  background-color: var(--medium-blue);
+  color: var(--dark-blue);
   margin-top: 1em;
   font-weight: 600;
   -webkit-transition: color 0.3s ease, background-color 0.3s ease;
@@ -73,8 +73,8 @@
 }
 
 .right button:hover {
-  background-color: rgb(34, 100, 185);
-  color: rgb(205, 238, 253);
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
 }
 
 button {
@@ -91,7 +91,7 @@ button {
   display: block;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid rgb(34, 100, 185);
+  border-bottom: 1px solid var(--dark-blue);
   outline: none;
   width: 80%;
 }

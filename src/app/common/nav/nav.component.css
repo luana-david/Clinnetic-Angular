@@ -1,6 +1,6 @@
 .navigation {
   font-size: 1.2rem;
-  background-color: rgb(34, 100, 185);
+  background-color: var(--dark-blue);
 }
 
 ul {
@@ -118,7 +118,7 @@ position: relative;
     padding: 1em 2em;
     outline: none;
     border: none;
-    background-color: rgb(34, 100, 185);
+    background-color: var(--dark-blue);
     margin: 0 auto;
   }
 
