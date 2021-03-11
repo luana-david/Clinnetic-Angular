@@ -26,8 +26,27 @@
   width: 100%;
 }
 
-.details-container h4{
+.details-container h4, .details-container h5{
   color: var(--dark-blue);
+}
+
+.details-container h5 {
+  position: relative;
+}
+
+mat-icon {
+  color: var(--medium-blue);
+  transform: scale(0.8);
+}
+
+.details-container h5::after {
+  content: '';
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--medium-blue);
 }
 
 .details-container p{
@@ -35,3 +54,7 @@
   opacity: 0.85;
 }
 
+.service {
+  display: flex;
+  align-items: center;
+}
