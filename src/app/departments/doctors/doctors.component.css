@@ -59,8 +59,27 @@ mat-icon {
   align-items: center;
 }
 
-.doctor-profile span {
+.doctor-profile .close-button {
   display: none;
+}
+
+button {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  margin-top: 1em;
+  font-weight: 600;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  -o-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+}
+
+button:hover {
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
 }
 
 @media (max-width: 992px) {
@@ -76,7 +95,7 @@ mat-icon {
     transition: opacity 200ms ease-out;
   }
 
-  .doctor-profile span {
+  .doctor-profile .close-button {
     display: inline;
     float: right;
     font-size: 1.5rem;
@@ -86,7 +105,7 @@ mat-icon {
     transition: transform 200ms cubic-bezier(.17,.67,.75,1.31);
   }
 
-  .doctor-profile span:hover {
+  .doctor-profile .close-button:hover {
     transform: scale(1.2);
     transform-origin: bottom;
   }

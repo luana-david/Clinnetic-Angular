@@ -1,5 +1,5 @@
 <div class="doctor-profile" [ngStyle]="{'opacity': showMode ? '1' : '0'}">
-  <span (click)="showMode=false">&times;</span>
+  <span class="close-button" (click)="showMode=false">&times;</span>
   <div class="profile-image-container">
     <img [src]="doctor.image" alt="profile picture">
   </div>
@@ -9,4 +9,5 @@
     <h5>Services</h5>
     <p class="service" *ngFor="let service of doctor.services"><mat-icon>check_circle</mat-icon> {{service.name}}</p>
   </div>
+  <button>Make an Appointment</button>
 </div>
