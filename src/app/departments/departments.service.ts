@@ -17,7 +17,17 @@ export class DepartmentsService {
           lastName: 'Stewart',
           departmentId: '1',
           image: '../../assets/images/doctor_f.png',
-          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?'
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?',
+          services: [
+            {
+              id: '1',
+              name: 'Echograpdy'
+            },
+            {
+              id: '2',
+              name: 'EKG'
+            }
+          ]
         },
         {
           id: '2',
@@ -25,7 +35,21 @@ export class DepartmentsService {
           lastName: 'McKenzy',
           departmentId: '1',
           image: '../../assets/images/doctor_m.png',
-          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?'
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?',
+          services: [
+            {
+              id: '1',
+              name: 'Echograpdy'
+            },
+            {
+              id: '2',
+              name: 'EKG'
+            },
+            {
+              id: '3',
+              name: 'Chirurgy'
+            }
+          ]
         },
         {
           id: '3',
@@ -33,7 +57,17 @@ export class DepartmentsService {
           lastName: 'Allen',
           departmentId: '1',
           image: '../../assets/images/doctor_f.png',
-          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?'
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?',
+          services: [
+            {
+              id: '2',
+              name: 'EKG'
+            },
+            {
+              id: '3',
+              name: 'Chirurgy'
+            }
+          ]
         }
       ]
     },
@@ -47,7 +81,17 @@ export class DepartmentsService {
           lastName: 'Lee',
           departmentId: '2',
           image: '../../assets/images/doctor_f.png',
-          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?'
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?',
+          services: [
+            {
+              id: '4',
+              name: 'Excision'
+            },
+            {
+              id: '3',
+              name: 'Chirurgy'
+            }
+          ]
         },
         {
           id: '5',
@@ -55,7 +99,21 @@ export class DepartmentsService {
           lastName: 'Osborne',
           departmentId: '2',
           image: '../../assets/images/doctor_m.png',
-          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?'
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?',
+          services: [
+            {
+              id: '4',
+              name: 'Excision'
+            },
+            {
+              id: '3',
+              name: 'Chirurgy'
+            },
+            {
+              id: '5',
+              name: 'Pediatric'
+            }
+          ]
         }
       ]
     },
@@ -69,7 +127,21 @@ export class DepartmentsService {
           lastName: 'Wagner',
           departmentId: '3',
           image: '../../assets/images/doctor_m.png',
-          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?'
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?',
+          services: [
+            {
+              id: '3',
+              name: 'Chirurgy'
+            },
+            {
+              id: '5',
+              name: 'Pediatric'
+            },
+            {
+              id: '6',
+              name: 'Endoscopy'
+            }
+          ]
         },
         {
           id: '7',
@@ -77,7 +149,17 @@ export class DepartmentsService {
           lastName: 'Stewart',
           departmentId: '3',
           image: '../../assets/images/doctor_f.png',
-          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?'
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?',
+          services: [
+            {
+              id: '5',
+              name: 'Pediatric'
+            },
+            {
+              id: '6',
+              name: 'Endoscopy'
+            }
+          ]
         }
       ]
     }

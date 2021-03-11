@@ -5,4 +5,10 @@ export interface DoctorModel {
   departmentId: string;
   image: string;
   description: string;
+  services: Services[];
+}
+
+export interface Services {
+  id: string;
+  name: string;
 }
