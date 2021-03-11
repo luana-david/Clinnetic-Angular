@@ -4,4 +4,5 @@ export interface DoctorModel {
   lastName: string;
   departmentId: string;
   image: string;
+  description: string;
 }

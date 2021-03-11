@@ -16,21 +16,24 @@ export class DepartmentsService {
           firstName: 'Laura',
           lastName: 'Stewart',
           departmentId: '1',
-          image: '../../assets/images/doctor_f.png'
+          image: '../../assets/images/doctor_f.png',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?'
         },
         {
           id: '2',
           firstName: 'Arthur',
           lastName: 'McKenzy',
           departmentId: '1',
-          image: '../../assets/images/doctor_m.png'
+          image: '../../assets/images/doctor_m.png',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?'
         },
         {
           id: '3',
           firstName: 'Deborah',
           lastName: 'Allen',
           departmentId: '1',
-          image: '../../assets/images/doctor_f.png'
+          image: '../../assets/images/doctor_f.png',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?'
         }
       ]
     },
@@ -43,14 +46,16 @@ export class DepartmentsService {
           firstName: 'Sarah',
           lastName: 'Lee',
           departmentId: '2',
-          image: '../../assets/images/doctor_f.png'
+          image: '../../assets/images/doctor_f.png',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?'
         },
         {
           id: '5',
           firstName: 'Mathew',
           lastName: 'Osborne',
           departmentId: '2',
-          image: '../../assets/images/doctor_m.png'
+          image: '../../assets/images/doctor_m.png',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?'
         }
       ]
     },
@@ -63,14 +68,16 @@ export class DepartmentsService {
           firstName: 'Kris',
           lastName: 'Wagner',
           departmentId: '3',
-          image: '../../assets/images/doctor_m.png'
+          image: '../../assets/images/doctor_m.png',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?'
         },
         {
           id: '7',
           firstName: 'Lucy',
           lastName: 'Stewart',
           departmentId: '3',
-          image: '../../assets/images/doctor_f.png'
+          image: '../../assets/images/doctor_f.png',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem commodi eos quo corporis nostrum sint perferendis delectus! Ullam quo dolor, modi consectetur dignissimos deleniti nemo omnis nam eveniet debitis.Quaerat eum qui quod laboriosam ipsum libero explicabo saepe a tenetur sapiente nam neque quae, exercitationem optio eligendi quibusdam. Beatae unde culpa laborum aliquid. Architecto consequuntur voluptatem consectetur aliquid. Debitis! Reiciendis corporis eligendi itaque quia eos optio. Libero est alias eum? Ad explicabo optio inventore harum consequuntur. Et, nemo, dolorum numquam rem eaque, recusandae at blanditiis sapiente ratione adipisci asperiores?'
         }
       ]
     }
