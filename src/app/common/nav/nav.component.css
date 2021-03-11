@@ -1,6 +1,6 @@
 .navigation {
   font-size: 1.2rem;
-  background-color: rgb(34, 100, 185);
+  background-color: var(--dark-blue);
 }
 
 ul {
@@ -25,6 +25,11 @@ li a, i {
   color: white;
   position: relative;
   cursor: pointer;
+}
+
+li:focus {
+  outline: none !important;
+  border: none !important;
 }
 
 li + li {
@@ -58,6 +63,21 @@ li a:hover::after {
   -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+ a.active-link {
+  position: relative;
+}
+
+ a.active-link::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
 }
 
 .toggle-menu {
@@ -98,7 +118,7 @@ position: relative;
     padding: 1em 2em;
     outline: none;
     border: none;
-    background-color: rgb(34, 100, 185);
+    background-color: var(--dark-blue);
     margin: 0 auto;
   }
 
