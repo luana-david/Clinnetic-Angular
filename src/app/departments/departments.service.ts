@@ -1,4 +1,5 @@
 import { Injectable } from "@angular/core";
+import { Observable, Subject } from "rxjs";
 import { DepartmentModel } from "./department.model";
 import { DoctorModel } from "./doctor.model";
 
@@ -6,6 +7,7 @@ import { DoctorModel } from "./doctor.model";
 
 export class DepartmentsService {
 
+  private showSubject = new Subject<boolean>()
   private _departments: DepartmentModel[] = [
     {
       id: '1',
@@ -180,4 +182,11 @@ export class DepartmentsService {
     return doctorFound
   }
 
+  showModal() {
+    this.showSubject.next(true)
+  }
+
+  getModalMode() {
+    return this.showSubject.asObservable()
+  }
 }

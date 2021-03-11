@@ -17,4 +17,8 @@ export class DepartmentsComponent implements OnInit {
     this.departments = this.departmentsService.getDepartments()
   }
 
+  showModal() {
+    this.departmentsService.showModal()
+  }
+
 }

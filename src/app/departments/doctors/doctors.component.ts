@@ -10,7 +10,8 @@ import { DoctorModel } from '../doctor.model';
 })
 export class DoctorsComponent implements OnInit {
 
-  doctor
+  doctor: DoctorModel
+  showMode: boolean = true
 
   constructor(private departmentsService: DepartmentsService, private route: ActivatedRoute) { }
 
@@ -18,8 +19,7 @@ export class DoctorsComponent implements OnInit {
     this.route.params.subscribe((param: Params) => {
       this.doctor = this.departmentsService.getDoctor(param['id'])
       console.log(this.doctor);
-
     })
+    this.departmentsService.getModalMode().subscribe(mode => this.showMode = mode)
   }
-
 }
