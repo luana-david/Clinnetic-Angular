@@ -1,1 +1,10 @@
-<p>{{doctor?.lastName}}</p>
+<div class="doctor-profile">
+  <div class="profile-image-container">
+    <img [src]="doctor.image" alt="profile picture">
+  </div>
+  <div class="details-container">
+    <h4> {{doctor.firstName}} {{doctor.lastName}}</h4>
+    <p> {{doctor.description}}
+    </p>
+  </div>
+</div>
