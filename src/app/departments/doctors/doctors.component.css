@@ -17,6 +17,9 @@
   float: left;
   shape-outside: circle(50%);
   -webkit-shape-outside: circle(50%);
+  border-top: 3px solid var(--medium-blue);
+  border-bottom: 3px solid var(--medium-blue);
+  border-right: 3px solid var(--medium-blue);
 }
 
 .profile-image-container img {
