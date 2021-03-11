@@ -15,19 +15,22 @@ export class DepartmentsService {
           id: '1',
           firstName: 'Laura',
           lastName: 'Stewart',
-          departmentId: '1'
+          departmentId: '1',
+          image: '../../assets/images/doctor_f.png'
         },
         {
           id: '2',
           firstName: 'Arthur',
           lastName: 'McKenzy',
-          departmentId: '1'
+          departmentId: '1',
+          image: '../../assets/images/doctor_m.png'
         },
         {
           id: '3',
           firstName: 'Deborah',
           lastName: 'Allen',
-          departmentId: '1'
+          departmentId: '1',
+          image: '../../assets/images/doctor_f.png'
         }
       ]
     },
@@ -39,13 +42,15 @@ export class DepartmentsService {
           id: '4',
           firstName: 'Sarah',
           lastName: 'Lee',
-          departmentId: '2'
+          departmentId: '2',
+          image: '../../assets/images/doctor_f.png'
         },
         {
           id: '5',
           firstName: 'Mathew',
           lastName: 'Osborne',
-          departmentId: '2'
+          departmentId: '2',
+          image: '../../assets/images/doctor_m.png'
         }
       ]
     },
@@ -57,13 +62,15 @@ export class DepartmentsService {
           id: '6',
           firstName: 'Kris',
           lastName: 'Wagner',
-          departmentId: '3'
+          departmentId: '3',
+          image: '../../assets/images/doctor_m.png'
         },
         {
           id: '7',
           firstName: 'Lucy',
           lastName: 'Stewart',
-          departmentId: '3'
+          departmentId: '3',
+          image: '../../assets/images/doctor_f.png'
         }
       ]
     }
