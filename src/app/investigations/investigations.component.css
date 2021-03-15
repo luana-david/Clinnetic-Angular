@@ -1,3 +1,29 @@
 .investigations {
   width: 50%;
 }
+
+.subtitle {
+  padding: 1em;
+  color: var(--dark-blue);
+  background-color: var(--light-blue);
+  margin: 1em;
+  border-radius: 25px;
+  font-size: 1.3rem;
+}
+
+.subheading {
+  padding: 1em;
+  color: var(--dark-blue);
+  opacity: 0.9;
+  margin: 1em;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.add-button {
+  border-radius: 50%;
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  margin: 0.2em;
+}
