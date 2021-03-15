@@ -5,6 +5,7 @@ import { DepartmentsComponent } from './departments.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { DoctorsComponent } from './doctors/doctors.component'
+import { SharedModule } from "../shared/shared.module";
 
 const routes: Routes = [
   {path: '', component: DepartmentsComponent, children: [
@@ -22,8 +23,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forChild(routes),
     CommonModule,
-    MatExpansionModule,
-    MatIconModule
+    SharedModule
   ],
   exports: [
     DepartmentsComponent,

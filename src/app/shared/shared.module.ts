@@ -1,8 +1,8 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
+import { MatExpansionModule } from "@angular/material/expansion";
+import { MatIconModule } from "@angular/material/icon";
 import { RouterModule } from "@angular/router";
-import { DepartmentsModule } from "../departments/departments.module";
-import { HomeModule } from "../home/home.module";
 import { CarouselDirective } from "./carousel.directive";
 import { FooterComponent } from "./footer/footer.component";
 import { ToggleMenuDirective } from "./menu-toggle.directive";
@@ -24,6 +24,8 @@ import { NavComponent } from "./nav/nav.component";
     FooterComponent,
     FooterComponent,
     CarouselDirective,
+    MatExpansionModule,
+    MatIconModule
   ]
 })
 
