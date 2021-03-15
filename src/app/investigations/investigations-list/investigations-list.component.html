@@ -1,17 +1,17 @@
 <div class="container">
   <mat-accordion>
-    <mat-expansion-panel hideToggle>
+    <mat-expansion-panel *ngFor="let investigation of investigations" hideToggle>
       <mat-expansion-panel-header class="space-between">
         <mat-panel-title>
-          <h5>Name</h5>
+          <h5>{{investigation.type}}</h5>
         </mat-panel-title>
         <mat-panel-description >
           <mat-icon>people</mat-icon>
         </mat-panel-description>
       </mat-expansion-panel-header>
-      <div class="doctor">
+      <div *ngFor="let inv of investigation.investigations">
         <p>
-          <i routerLinkActive="selected-doctor" class="fa fa-stethoscope fa-lg p-2"></i>Sometext
+          {{inv.name}} {{inv.price}}
         </p>
       </div>
     </mat-expansion-panel>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { InvestigationsModel } from '../investigations.model';
+import { InvestigationsService } from '../investigations.service';
 
 @Component({
   selector: 'app-investigations-list',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InvestigationsListComponent implements OnInit {
 
-  constructor() { }
+  investigations: InvestigationsModel[]
+
+  constructor(private investigationsService: InvestigationsService) { }
 
   ngOnInit(): void {
+    this.investigations = this.investigationsService.getInvestigations()
   }
 
 }
