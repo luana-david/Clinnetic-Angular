@@ -14,3 +14,33 @@ mat-panel-title h5 {
 mat-expansion-panel p {
   color: var(--dark-blue);
 }
+
+.investigation-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.end-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+}
+
+.add-button {
+  padding: 0.3em;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  display: flex;
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  align-items: center;
+  transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+}
+
+.add-button:hover {
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0px 2px 4px var(--dark-blue);
+  box-shadow: 0px 2px 4px var(--dark-blue);
+}

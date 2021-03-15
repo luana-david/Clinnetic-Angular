@@ -1,17 +1,22 @@
 <div class="container">
   <mat-accordion>
     <mat-expansion-panel *ngFor="let investigation of investigations" hideToggle>
-      <mat-expansion-panel-header class="space-between">
+      <mat-expansion-panel-header>
         <mat-panel-title>
           <h5>{{investigation.type}}</h5>
         </mat-panel-title>
         <mat-panel-description >
-          <mat-icon>people</mat-icon>
+          <mat-icon>list</mat-icon>
         </mat-panel-description>
       </mat-expansion-panel-header>
       <div *ngFor="let inv of investigation.investigations">
-        <p>
-          {{inv.name}} {{inv.price}}
+        <p class="investigation-details">
+          <span>{{inv.name}}</span>
+          <span class="end-flex">{{inv.price | currency}}
+            <button class="add-button">
+              <mat-icon>add</mat-icon>
+            </button>
+          </span>
         </p>
       </div>
     </mat-expansion-panel>
