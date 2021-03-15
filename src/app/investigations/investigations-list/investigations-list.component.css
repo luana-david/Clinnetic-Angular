@@ -1,0 +1,16 @@
+.container {
+  padding: 1em;
+}
+
+mat-panel-description {
+  display: flex;
+  justify-content: flex-end;
+}
+
+mat-panel-title h5 {
+  color: var(--dark-blue);
+}
+
+mat-expansion-panel p {
+  color: var(--dark-blue);
+}
