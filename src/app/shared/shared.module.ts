@@ -16,8 +16,7 @@ import { NavComponent } from "./nav/nav.component";
     ToggleMenuDirective
   ],
   imports: [
-    RouterModule,
-    CommonModule
+    RouterModule
   ],
   exports: [
     NavComponent,
@@ -25,7 +24,8 @@ import { NavComponent } from "./nav/nav.component";
     FooterComponent,
     CarouselDirective,
     MatExpansionModule,
-    MatIconModule
+    MatIconModule,
+    CommonModule
   ]
 })
 
