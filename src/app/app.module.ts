@@ -4,13 +4,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SharedModule } from './common/shared.module';
+import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './home/home.module';
 import { DepartmentsModule } from './departments/departments.module';
+import { InvestigationsComponent } from './investigations/investigations.component';
+import { InvestigationsModule } from './investigations/investigations.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +20,8 @@ import { DepartmentsModule } from './departments/departments.module';
     BrowserAnimationsModule,
     SharedModule,
     HomeModule,
-    DepartmentsModule
+    DepartmentsModule,
+    InvestigationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
