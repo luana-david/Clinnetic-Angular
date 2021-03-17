@@ -1,1 +1,11 @@
-<p>calculator works!</p>
+<div class="container">
+  <div class="calculator" *ngIf="investigationList.length !== 0">
+    <p *ngFor="let inv of investigationList" class="investigation">
+      <span>{{inv.name}}</span><span>{{inv.price | currency}}</span>
+    </p>
+    <div class="total">
+      <h5 class="total-heading">Total</h5>
+      <p>{{total | currency}}</p>
+    </div>
+  </div>
+</div>
