@@ -1,4 +1,8 @@
 .investigations {
+  display: flex;
+}
+
+.investigations-list, .calculator {
   width: 50%;
 }
 
