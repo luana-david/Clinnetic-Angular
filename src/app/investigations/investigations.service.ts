@@ -1,4 +1,5 @@
 import { Injectable } from "@angular/core";
+import { Subject } from "rxjs";
 import { DepartmentsService } from "../departments/departments.service";
 import { InvestigationsModel } from "./investigations.model";
 
@@ -7,6 +8,8 @@ import { InvestigationsModel } from "./investigations.model";
 export class InvestigationsService {
 
   constructor(private departmentsService: DepartmentsService) {}
+
+  private _addToCalculator = new Subject<{name: string, price: number}>()
 
   private _investigations: InvestigationsModel[] = [
     {
@@ -58,5 +61,13 @@ export class InvestigationsService {
 
   getInvestigations() {
     return this._investigations
+  }
+
+  onAddToCalc(inv: {name: string, price: number}) {
+    this._addToCalculator.next(inv)
+  }
+
+  toCalculate() {
+    return this._addToCalculator.asObservable()
   }
 }
