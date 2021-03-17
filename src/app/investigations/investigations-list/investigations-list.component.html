@@ -13,7 +13,7 @@
         <p class="investigation-details">
           <span>{{inv.name}}</span>
           <span class="end-flex">{{inv.price | currency}}
-            <button class="add-button">
+            <button class="add-button" (click)="selectInvestigation(inv)">
               <mat-icon>add</mat-icon>
             </button>
           </span>

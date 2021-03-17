@@ -17,4 +17,8 @@ export class InvestigationsListComponent implements OnInit {
     this.investigations = this.investigationsService.getInvestigations()
   }
 
+  selectInvestigation(investigation: {name: string, price: number}) {
+    this.investigationsService.onAddToCalc(investigation)
+  }
+
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InvestigationsService } from '../investigations.service';
 
 @Component({
   selector: 'app-calculator',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculatorComponent implements OnInit {
 
-  constructor() { }
+  investigationList: {name: string, price: number}[] = []
+
+  constructor(private investigationService: InvestigationsService) { }
 
   ngOnInit(): void {
+    this.investigationService.toCalculate().subscribe(investigation => this.investigationList.push(investigation))
   }
 
 }
