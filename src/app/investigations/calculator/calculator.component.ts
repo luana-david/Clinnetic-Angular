@@ -9,11 +9,16 @@ import { InvestigationsService } from '../investigations.service';
 export class CalculatorComponent implements OnInit {
 
   investigationList: {name: string, price: number}[] = []
+  total:number = 0
 
   constructor(private investigationService: InvestigationsService) { }
 
   ngOnInit(): void {
-    this.investigationService.toCalculate().subscribe(investigation => this.investigationList.push(investigation))
+    this.investigationService.toCalculate().subscribe(investigation => {
+      console.log(this.total);
+      this.investigationList.push(investigation)
+      this.total += investigation.price
+    })
   }
 
 }
