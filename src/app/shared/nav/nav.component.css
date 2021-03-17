@@ -21,6 +21,12 @@ ul {
           transform: skew(-10deg);
 }
 
+.logo a::after {
+  -webkit-transform: scaleX(0) !important;
+      -ms-transform: scaleX(0) !important;
+          transform: scaleX(0) !important;
+}
+
 li a, i {
   color: white;
   position: relative;
