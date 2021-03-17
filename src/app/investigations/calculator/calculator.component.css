@@ -18,6 +18,62 @@
   justify-content: space-between;
 }
 
+.end-flex {
+  display: flex;
+  align-items: center;
+}
+
+.end-flex mat-icon {
+  margin-left: 0.5em;
+  transform: scale(0) translateX(24px);
+  cursor: pointer;
+}
+
+.end-flex span {
+  transform: translateX(32px);
+}
+
+.end-flex mat-icon, .end-flex span {
+  transition: transform 150ms ease-in;
+}
+
+.investigation:hover mat-icon {
+  transform: scale(1) translateX(0);
+}
+
+.investigation:hover span {
+  transform: translateX(0);
+}
+
+mat-icon {
+  transition: transform 100ms ease;
+}
+
+mat-icon:hover {
+  animation-name: jingle;
+  animation-duration: 400ms;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-out;
+}
+
+@keyframes jingle {
+  0% {
+    transform: rotate(0)
+  }
+
+  25% {
+    transform: rotate(25deg)
+  }
+
+  75% {
+    transform: rotate(-25deg)
+  }
+
+  100% {
+    transform: rotate(0)
+  }
+}
+
 .total {
   display: flex;
   justify-content: space-between;
