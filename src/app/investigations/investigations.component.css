@@ -33,3 +33,13 @@
   color: var(--dark-blue);
   margin: 0.2em;
 }
+
+@media (max-width: 992px) {
+  .investigations {
+    display: block;
+  }
+
+  .investigations-list, .calculator {
+    width: 100%;
+  }
+}
