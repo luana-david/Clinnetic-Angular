@@ -21,4 +21,9 @@ export class CalculatorComponent implements OnInit {
     })
   }
 
+  onDeleteInv(index) {
+    this.total -= this.investigationList[index].price
+    this.investigationList.splice(index, 1)
+  }
+
 }

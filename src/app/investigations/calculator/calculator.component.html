@@ -1,7 +1,7 @@
 <div class="container">
   <div class="calculator" *ngIf="investigationList.length !== 0">
-    <p *ngFor="let inv of investigationList" class="investigation">
-      <span>{{inv.name}}</span><span class="end-flex"><span>{{inv.price | currency}}</span><mat-icon color="warn">delete</mat-icon></span>
+    <p *ngFor="let inv of investigationList;let i=index" class="investigation">
+      <span>{{inv.name}}</span><span class="end-flex"><span>{{inv.price | currency}}</span><mat-icon (click)="onDeleteInv(i)" color="warn">delete</mat-icon></span>
     </p>
     <div class="total">
       <h5 class="total-heading">Total</h5>
