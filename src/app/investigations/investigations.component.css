@@ -21,8 +21,10 @@
   opacity: 0.9;
   margin: 1em;
   font-size: 1.1rem;
-  display: flex;
-  align-items: center;
+}
+
+.subheading mat-icon {
+  transform: translateY(5px);
 }
 
 .add-button {
